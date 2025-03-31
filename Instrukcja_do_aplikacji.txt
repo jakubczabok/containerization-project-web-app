@@ -1,0 +1,31 @@
+﻿Aplikacja jest oparta na 3 kontenerach:
+
+1. Baza danych (w katalogu postgres_data) w postgresql automatycznie aktualizująca się poprzez zależności z aplikacją backendową
+2. Frontend (w katalogu frontend) w javascript z wykorzystaniem react app builder
+3. Backend (w katalogu konteneryzacja_fizjo) w javie z wykorzystaniem springboot i maven
+
+
+Wymagane instalacje:
+
+
+Docker
+Docker Compose
+
+
+Użyte technologie:
+
+
+Backend: Spring-Boot, Maven, Java (JDK 17) 
+Frontend: React, JavaScript, Node.js 16
+Backend: Postgresql
+
+
+Po pobraniu i wypakowaniu katalogu z projektem w terminalu znajdując się w katalogu demo, w którym już znajdują się podkatalogi z frontendem, backendem oraz bazą danych należy uruchomić komendę:
+
+docker-compose up --build
+
+
+Aplikacja znajduje się pod adresem http://localhost:8081 (backend) i http://localhost:3004 (frontend).
+
+
+Zalecam testowanie na frontendzie, strona jest łatwa w użyciu system rezerwacji wyświetla tylko wolne terminy po potwierdzeniu wizyty i odświeżeniu strony dany zarezerwowany juz termin zniknie.
